@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServer", "IdentityServer\IdentityServer.csproj", "{5DD8F209-05BD-4412-B622-BD19F2D9B3CE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthenticationApi", "AuthenticationApi\AuthenticationApi.csproj", "{35A1DA09-85CF-467D-9C55-52C25612BE48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServer", "IdentityServer\IdentityServer.csproj", "{B4BAD097-C53A-438F-A01B-852BEBA1D3A8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -8,9 +10,13 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5DD8F209-05BD-4412-B622-BD19F2D9B3CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5DD8F209-05BD-4412-B622-BD19F2D9B3CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5DD8F209-05BD-4412-B622-BD19F2D9B3CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5DD8F209-05BD-4412-B622-BD19F2D9B3CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35A1DA09-85CF-467D-9C55-52C25612BE48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35A1DA09-85CF-467D-9C55-52C25612BE48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35A1DA09-85CF-467D-9C55-52C25612BE48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35A1DA09-85CF-467D-9C55-52C25612BE48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4BAD097-C53A-438F-A01B-852BEBA1D3A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4BAD097-C53A-438F-A01B-852BEBA1D3A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4BAD097-C53A-438F-A01B-852BEBA1D3A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4BAD097-C53A-438F-A01B-852BEBA1D3A8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

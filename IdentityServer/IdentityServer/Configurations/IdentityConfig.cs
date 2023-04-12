@@ -3,7 +3,7 @@ namespace IdentityServer.Configurations;
 
 public static class IdentityConfig
 {
-    private static AppSetting Configuration = ConfigurationHelper.Configuration;
+    
     
     public static IEnumerable<ApiScope> ApiScopes =>
         new List<ApiScope>
@@ -18,7 +18,8 @@ public static class IdentityConfig
             {
                 ClientId = "client",
                 // no interactive user, use the clientid/secret for authentication
-                AllowedGrantTypes = GrantTypes.ClientCredentials,
+                AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
+                
                 // secret for authentication
                 ClientSecrets =
                 {
