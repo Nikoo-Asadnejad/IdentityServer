@@ -16,18 +16,30 @@ public static class IdentityConfig
         {
             new Client
             {
-                ClientId = "client",
+                ClientId = "web-client",
                 // no interactive user, use the clientid/secret for authentication
-                AllowedGrantTypes = GrantTypes.ResourceOwnerPassword,
+                AllowedGrantTypes = GrantTypes.Code,
                 
                 // secret for authentication
                 ClientSecrets =
                 {
                     new Secret("secret".Sha256())
                 },
+                
                 // scopes that client has access to
                 AllowedScopes = { "api1" },
-                RequirePkce = true
+                RequirePkce = true,
+                RequireConsent = false,
+                RequireClientSecret = false,
+                AllowAccessTokensViaBrowser = true,
+                
             }
+        };
+
+    public static IEnumerable<IdentityResource> Resources =>
+        new List<IdentityResource>()
+        {
+            new IdentityResources.OpenId(),
+            new IdentityResources.Profile()
         };
 }

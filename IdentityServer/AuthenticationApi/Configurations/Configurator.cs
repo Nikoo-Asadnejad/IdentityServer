@@ -28,7 +28,7 @@ public static class Configurator
 
         app.UseHttpsRedirection();
         app.UseAuthorization();
-        app.MapControllers();
+        app.MapControllers().RequireAuthorization("ApiScope");
         IdentityServerConfigurator.ConfigurePipeline(app);
     }
 }
